@@ -1,0 +1,8 @@
+﻿  locale.cpp
+    正在创建库 D:\Code\CPP\BoostTest\Release\BoostTest.lib 和对象 D:\Code\CPP\BoostTest\Release\BoostTest.exp
+  正在生成代码
+  35 of 1329 functions ( 2.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    22 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  BoostTest.vcxproj -> D:\Code\CPP\BoostTest\Release\BoostTest.exe
