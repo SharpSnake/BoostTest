@@ -1,5 +1,4 @@
 # BoostTest
-[![Build status]](https://ci.appveyor.com/project/SharpSnake/boosttest)
 
 ## 一些boost和C++新标准库的测试用例。
 ## Some test cases of boost and new C++ Standard libraries.
