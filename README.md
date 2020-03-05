@@ -1,8 +1,10 @@
 # BoostTest
-## Ò»Ğ©boostºÍC++ĞÂ±ê×¼¿âµÄ²âÊÔÓÃÀı¡£
+[![Build status]](https://ci.appveyor.com/project/SharpSnake/boosttest)
+
+## ä¸€äº›boostå’ŒC++æ–°æ ‡å‡†åº“çš„æµ‹è¯•ç”¨ä¾‹ã€‚
 ## Some test cases of boost and new C++ Standard libraries.
 
 
-My Sina blot:[ÉßÓêÏÉMeteoraµÄ²©¿Í](http://blog.sina.com.cn/meteorafever)
+My Sina blot:[è›‡é›¨ä»™Meteoraçš„åšå®¢](http://blog.sina.com.cn/meteorafever)
 
 My E-mail:losengarden@aliyun.com
