@@ -1,0 +1,15 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs/BoostTest
+/BoostNetClient/Release/BoostNetClient.tlog
+/BoostNetClient/Release
+/BoostNetServer/Release
+/BoostTest/Release
+/BoostTest/x64/Debug
+/Release
+/BoostNetClient
+/BoostNetServer
+/BoostTest.VC.db
+/BoostTest/x64/Release

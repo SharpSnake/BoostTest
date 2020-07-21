@@ -1,36 +1,27 @@
 #ifndef WATCH_H
 #define WATCH_H
 
-#include <Windows.h>
+#include <chrono>
 
 class MWatch
 {
+	typedef std::chrono::high_resolution_clock	clock_type;
+
 public:
-	MWatch()
-	{
-		QueryPerformanceFrequency( ( LARGE_INTEGER* )&fq );
-		QueryPerformanceCounter( ( LARGE_INTEGER* )&t1 );
-	}
+	MWatch()	noexcept	{ Tic(); }
 
-	void Reset()
-	{
-		QueryPerformanceCounter( ( LARGE_INTEGER* )&t1 );
-	}
+	void Tic()	noexcept	{ t1 = clock_type::now(); }
 
-	void Stop()
+	template< typename Dura = std::chrono::milliseconds, typename Rep = double >
+	auto Toc()	noexcept
 	{
-		QueryPerformanceCounter( ( LARGE_INTEGER* )&t2 );
-	}
-
-	double Millisecond()
-	{
-		return ( t2 - t1 ) * 1000.0 / fq;
+		t2 = clock_type::now();
+		return std::chrono::duration_cast< std::chrono::duration< Rep, typename Dura::period > >( t2 - t1 ).count();
 	}
 
 private:
-	LONGLONG fq;
-	LONGLONG t1;
-	LONGLONG t2;
+	clock_type::time_point t1;
+	clock_type::time_point t2;
 };
 
 #endif // !WATCH_H

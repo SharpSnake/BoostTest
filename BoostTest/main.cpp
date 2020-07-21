@@ -9,13 +9,14 @@ extern void RegexMain();
 extern void ThreadMain();
 extern void ThreadExMain();
 extern void LocaleMain();
+extern void PoolMain();
 
 int main( int argc, const char* argv[] )
 {
 	FunctionsInit();
 	try
 	{
-		LocaleMain();
+		PoolMain();
 	}
 	catch( const std::exception &ex )
 	{
